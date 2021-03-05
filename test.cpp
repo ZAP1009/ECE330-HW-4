@@ -4,6 +4,8 @@
 #include<iostream>
 #include <string>
 #include "employee.h"
+#include "salariedEmployee.h"
+#include "hourlyEmployee.h"
 
 using namespace std;
 
@@ -16,6 +18,20 @@ int main()
   
   e1.printEmployee();
   e2.printEmployee();
-  
+
+
+  HourlyEmployee h1("Parker", "Zane", "A", 12.00, 1234, 901, 40);
+  HourlyEmployee h2("Smith", "John", "A", 25.49, 9807, 400, 50);
+
+  h1.printEmployee();
+  h2.printEmployee();
+
+  SalariedEmployee s1("Williams", "Erica", "J", 6000, 1006,999, .5);
+  SalariedEmployee s2("Garcia", "Manuel", "A", 10000, 4004,717, 1);
+
+  s1.printEmployee();
+  s2.printEmployee();
+
+     
 
 }
